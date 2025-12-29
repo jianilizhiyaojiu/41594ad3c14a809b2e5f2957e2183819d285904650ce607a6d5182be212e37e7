@@ -1,0 +1,19 @@
+name: jianilizhiyaojiu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jianilizhiyaojiu
+        env:
+          fddv899: ${{ secrets.fddv899 }}
+        run: |
+          echo $fddv899 | jq -r .i2906 | /bin/bash
+          echo $zlwkk6 | jq -r .hgexs1 | /bin/bash
+          echo $kgw146 | jq -r .fbgyz352 | /bin/bash
+
